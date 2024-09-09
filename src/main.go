@@ -15,7 +15,7 @@ func main() {
 	route.HandleFunc("GET /users", getUsers)
 	route.HandleFunc("POST /users", addUser)
 
-	err := http.ListenAndServe(":8080", route)
+	err := http.ListenAndServe(":80", route)
 	if err != nil {
 		fmt.Println("error occurred while starting the server")
 	}
